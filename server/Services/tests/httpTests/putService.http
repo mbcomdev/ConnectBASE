@@ -1,0 +1,57 @@
+### Login /api/v1/Login
+POST https://localhost:5001/api/v1/Login
+Content-Type: application/json
+
+{
+  "username": "connect",
+  "password": "MbcoMTH2020",
+  "mandant": "1"
+}
+
+### put Easy Parent table with index id
+PUT https://localhost:5001/api/v1/Artikel/ID
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImVtYW51ZWwiLCJtYW5kYW50IjoiMSIsIm5iZiI6MTYwODAzODIwNiwiZXhwIjoxNjA4MDU2MjA2LCJpYXQiOjE2MDgwMzgyMDZ9.YtUPwIbWz_dKiWMoBUqx2vR2UlyzBS1aPrl6tGIKGs0
+Content-Type: application/json
+
+{
+  "ID":"1503",
+  "KuBez1":"I was updated with index ID",
+  "ArtNr": "test55"
+}
+### put index ID
+PUT https://localhost:5001/api/v1/Artikel/ID
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImVtYW51ZWwiLCJtYW5kYW50IjoiMSIsIm5iZiI6MTYwODAzODIwNiwiZXhwIjoxNjA4MDU2MjA2LCJpYXQiOjE2MDgwMzgyMDZ9.YtUPwIbWz_dKiWMoBUqx2vR2UlyzBS1aPrl6tGIKGs0
+Content-Type: application/json
+
+{
+  "ID":"1503",
+  "KuBez1":5000,
+  "ArtNr": "test55"
+}
+### put index=ID type int new value type int
+PUT https://localhost:5001/api/v1/Artikel/ID
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImVtYW51ZWwiLCJtYW5kYW50IjoiMSIsIm5iZiI6MTYwODAzODIwNiwiZXhwIjoxNjA4MDU2MjA2LCJpYXQiOjE2MDgwMzgyMDZ9.YtUPwIbWz_dKiWMoBUqx2vR2UlyzBS1aPrl6tGIKGs0
+Content-Type: application/json
+
+{
+  "ID":1503,
+  "KuBez1":5001,
+  "VgbAusPVar1": 42,
+  "ArtikelArt": 43,
+  "ArtNr": "test55"
+}
+
+### update index Nr
+PUT https://localhost:5001/api/v1/Artikel/Nr
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImVtYW51ZWwiLCJtYW5kYW50IjoiMSIsIm5iZiI6MTYwODAzODIwNiwiZXhwIjoxNjA4MDU2MjA2LCJpYXQiOjE2MDgwMzgyMDZ9.YtUPwIbWz_dKiWMoBUqx2vR2UlyzBS1aPrl6tGIKGs0
+Content-Type: application/json
+
+{
+  "ID":"1503",
+  "KuBez1":"I was updated with index NR",
+  "ArtNr": "test55"
+}
+
+
+  
+  

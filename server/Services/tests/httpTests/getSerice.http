@@ -1,0 +1,4 @@
+###GetAll /api/v1/DynamicGet/GetAll
+GET https://localhost:5001/api/v1/DynamicGet/Artikel
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkVtYW51ZWwiLCJtYW5kYW50IjoiMSIsIm5iZiI6MTYwNzc2OTc1MywiZXhwIjoxNjA3Nzg3NzUzLCJpYXQiOjE2MDc3Njk3NTN9.mz0s-afdC3GrZP_r_QdldcYfKaIpPxsNr7eilgCBRPM
+
