@@ -1,9 +1,9 @@
 # Projekt ConnectBase
 
-REST-API für das Warenwirtschaftssystem microtech Büro+. Zugriff lesend wie schreibend auf relevante Daten des Warenwirtschaftsprogramms über eine moderne REST-API mittels sicherer Authentifizierungsmechanismen.
+REST-API für das Warenwirtschaftssystem microtech büro+. Zugriff lesend wie schreibend auf relevante Daten des Warenwirtschaftsprogramms über eine moderne REST-API mittels sicherer Authentifizierungsmechanismen.
 
 ConnectBase stellt folgende Features bereit:
-- REST Schnittstelle für lesenden und schreibenden Zugriff auf die Microtech Büro+ Datenbank
+- REST Schnittstelle für lesenden und schreibenden Zugriff auf die Microtech büro+ Datenbank
 - Authentifizierung mittels JSON Web Token
 - Schnittstellendokumentation mittels Swagger
 - Scheduling von Anfragen
