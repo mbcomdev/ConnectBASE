@@ -19,6 +19,7 @@ namespace connectBase
                 { "-cleanupDirectories", "CleanupDirectories" },
             };
             return Host.CreateDefaultBuilder(args)
+                .UseWindowsService()
                 .ConfigureAppConfiguration((hostingContext, config) =>
                 {
                     config.AddCommandLine(args, switchMappings);
