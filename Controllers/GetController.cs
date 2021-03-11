@@ -30,7 +30,7 @@ namespace connectBase.Controllers
         /// Sample request:
         /// 
         ///     GET {$HOST}/api/v1/Artikel
-        ///     Authorization: Bearer {$JWT_TOKEN}
+        ///     x-api-key: {$API-Key}
         /// </remarks>
         /// <response code="200">ok</response>
         /// <response code="500">cant provide data from table</response>
@@ -64,14 +64,14 @@ namespace connectBase.Controllers
         /// <remarks>
         /// Sample request:
         /// 
-        ///     GET {$HOST}/api/v1/Artikel/ID/FromRange
-        ///     Authorization: Bearer {$JWT_TOKEN}
+        ///     GET {$HOST}/api/v1/Artikel/ID/Range
+        ///     x-api-key: {$API-Key}
         ///     Content-Type: application/json
         /// </remarks>
         /// <response code="200">ok</response>
         /// <response code="500">cant provide data from table</response>
         [HttpGet]
-        [Route("{table}/{index}/FromRange")]
+        [Route("{table}/{index}/Range")]
         [Produces("application/json")]
         [ProducesResponseType(200)]
         [ProducesResponseType(500)]
@@ -98,7 +98,13 @@ namespace connectBase.Controllers
         /// <summary>
         /// Get all data from a table selected by a indexList
         /// </summary>
+        /// <remarks>
+        /// Sample request:
         /// 
+        ///     GET {$HOST}/api/v1/Artikel/ID
+        ///     x-api-key: {$API-Key}
+        ///     Content-Type: application/json
+        /// </remarks>
         /// <response code="200">ok</response>
         /// <response code="500">cant provide data from indexlist</response>
         [HttpGet]
@@ -164,7 +170,7 @@ namespace connectBase.Controllers
         /// Sample request:
         /// 
         ///     GET {$HOST}/api/v1/Artikel/Nested/Ums
-        ///     Authorization: Bearer {$JWT_TOKEN}
+        ///     x-api-key: {$API-Key}
         ///     Content-Type: application/json
         /// </remarks>
         /// <response code="200">ok</response>

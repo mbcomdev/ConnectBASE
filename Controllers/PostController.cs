@@ -34,7 +34,7 @@ namespace connectBase.Controllers
         /// Sample requests:
         /// 
         ///     POST {$HOST}/api/v1/Artikel
-        ///     Authorization: Bearer {$JWT_TOKEN}
+        ///     x-api-key: {$API-Key}
         ///     Content-Type: application/json
         ///
         ///     {
@@ -75,7 +75,7 @@ namespace connectBase.Controllers
         /// Sample requests:
         /// 
         ///     POST {$HOST}/api/v1/Artikel/Nested/Ums
-        ///     Authorization: Bearer {$JWT_TOKEN}
+        ///     x-api-key: {$API-Key}
         ///     Content-Type: application/json
         ///
         ///     {

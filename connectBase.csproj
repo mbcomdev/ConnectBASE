@@ -13,6 +13,16 @@
     <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="SchemeFiles\**" />
+    <Compile Remove="ValidationFiles\**" />
+    <Content Remove="SchemeFiles\**" />
+    <Content Remove="ValidationFiles\**" />
+    <EmbeddedResource Remove="SchemeFiles\**" />
+    <EmbeddedResource Remove="ValidationFiles\**" />
+    <None Remove="SchemeFiles\**" />
+    <None Remove="ValidationFiles\**" />
+  </ItemGroup>
+  <ItemGroup>
     <COMReference Include="BpNT.dll">
       <Guid>c74fb8f0-a6ef-11d2-b95e-004005232b30</Guid>
       <VersionMajor>1</VersionMajor>

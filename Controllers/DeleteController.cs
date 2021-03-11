@@ -1,4 +1,4 @@
-using connectBase.Services;
+/*using connectBase.Services;
 using connectBase.Services.Scheduler;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -32,7 +32,7 @@ namespace connectBase.Controllers
         /// Sample request:
         /// 
         ///     DELETE {$HOST}/api/v1/Artikel/ID
-        ///     Authorization: Bearer {$JWT_TOKEN}
+        ///     x-api-key: {$API-Key}
         ///     Content-Type: application/json
         /// </remarks>
         /// <response code="200">ok</response>
@@ -69,7 +69,7 @@ namespace connectBase.Controllers
         /// Sample request:
         /// 
         ///     DELETE {$HOST}/api/v1/Artikel/ID/99
-        ///     Authorization: Bearer {$JWT_TOKEN}
+        ///     x-api-key: {$API-Key}
         ///     Content-Type: application/json
         /// </remarks>
         /// <response code="200">ok</response>
@@ -99,3 +99,4 @@ namespace connectBase.Controllers
         }
     }
 }
+*/

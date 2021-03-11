@@ -158,12 +158,12 @@ namespace connectBase.Services.Util
             dataset.SetRangeStart();
             foreach (KeyValuePair<string, string> kvp in indexFields)
             {
-                dataset.Fields[kvp.Key].AsString = kvp.Value.Split("-")[0];
+                dataset.Fields[kvp.Key].AsString = kvp.Value.Split("~")[0];
             }
             dataset.SetRangeEnd();
             foreach (KeyValuePair<string, string> kvp in indexFields)
             {
-                dataset.Fields[kvp.Key].AsString = kvp.Value.Split("-")[1];
+                dataset.Fields[kvp.Key].AsString = kvp.Value.Split("~")[1];
             }
             dataset.ApplyRange();
             return dataset;

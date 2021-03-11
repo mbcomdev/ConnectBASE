@@ -33,7 +33,7 @@ namespace connectBase.Controllers
         /// 
         ///     ### put index ID
         ///     PUT {$HOST}/api/v1/Artikel/ID
-        ///     Authorization: Bearer {$JWT_TOKEN}
+        ///     x-api-key: {$API-Key}
         ///     Content-Type: application/json
         ///
         ///     {
@@ -43,7 +43,7 @@ namespace connectBase.Controllers
         ///     }
         ///     ### put index NR
         ///     PUT {$HOST}/api/v1/Artikel/Nr
-        ///     Authorization: Bearer {$JWT_TOKEN}
+        ///     x-api-key: {$API-Key}
         ///     Content-Type: application/json
         ///
         ///     {
