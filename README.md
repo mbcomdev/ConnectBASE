@@ -16,7 +16,7 @@ ConnectBASE stellt folgende Features bereit:
 - Vorgangsposition
 - Vorgang
 
-**Folgende Objekte können nicht gelesen, geschrieben oder geändert werden:**
+**Folgende Objekte können nicht geschrieben oder geändert werden:**
 - Dokument
 - Bild
 - Seriennummer
