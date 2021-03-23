@@ -9,6 +9,34 @@ ConnectBASE stellt folgende Features bereit:
 - Scheduling von Anfragen
 - Body-Validierung von eingehenden Anfragen
 
+## Einschränkungen
+
+**Für folgende Tabellen können keine neuen Objekte angelegt werden:**
+- Projekte
+- Vorgangsposition
+- Vorgang
+
+**Folgende Objekte können nicht gelesen, geschrieben oder geändert werden:**
+- Dokument
+- Bild
+- Seriennummer
+- Lagerbewegungen
+- Wandeln
+- Zahlungsverkehr
+- Offene Posten
+- Dublettensuche
+- Banking
+- Blobs
+- String Lists
+- Beträge
+- Events
+- Nachrichten
+- Drucken
+- Layouts
+
+**Löschen von Daten über die Schnittstelle ist nicht möglich.**
+
+
 ## Für Entwickler
 
 Damit ConnectBASE korrekt ausgeführt und gestartet werden kann, müssen gültige Anmeldedaten in der AppSettings Datei hinterlegt werden (siehe Kapitel Konfiguration).
