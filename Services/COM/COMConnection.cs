@@ -10,8 +10,8 @@ namespace connectBase.Services.COM
 {
     public class COMConnection : IDisposable
     {
-        private readonly string CONNECTION_NAME = "MBCOM IT-Systemhaus GmbH - MBCOM ConnectEGIS!";
-        private readonly string CONNECTION_KEY = "GPVV2-8ESVD-4XZ9J-6BG23-K5D68-FZZUE";
+        private readonly string CONNECTION_NAME;
+        private readonly string CONNECTION_KEY = "";
         private Application bpApp;
         private ILogger<COMConnection> _logger;
         public static readonly List<string> APIKEYLIST = new List<string>();
@@ -22,6 +22,11 @@ namespace connectBase.Services.COM
             _logger = logger;
             _logger.LogInformation("COMAktiv Service Started");
             bpApp = new Application();
+            object customernumber = null;
+            object company = null;
+            object postalcode = null;
+            bpApp.GetKundendaten(ref customernumber, ref company, ref postalcode);
+            CONNECTION_NAME = company.ToString();
             try
             {
                 bpApp.Init(
